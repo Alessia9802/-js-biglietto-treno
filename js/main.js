@@ -39,4 +39,4 @@ if (passenger_age < età_minori) {
 }
 
 document.getElementById("Prezzo_finale").innerHTML =
-  prezzo + km_viaggio + passenger_age;
+  (prezzo + km_viaggio + passenger_age) / 100;
