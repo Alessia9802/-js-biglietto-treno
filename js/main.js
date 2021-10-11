@@ -32,9 +32,11 @@ const sconto_max = (età_over / 40) * 100;
 console.log(sconto_max);
 
 // Prezzo finale
-
 if (passenger_age < età_minori) {
   console.log(sconto_min);
 } else if (passenger_age > età_over) {
   console.log(sconto_max);
 }
+
+document.getElementById("Prezzo_finale").innerHTML =
+  km_viaggio + passenger_age + prezzo;
